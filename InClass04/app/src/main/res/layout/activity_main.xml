@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Name: "/>
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Dept: "/>
+            <EditText
+                android:id="@+id/deptEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Age: "/>
+
+            <EditText
+                android:id="@+id/ageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="2"
+                android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="ZIP: "/>
+            <EditText
+                android:id="@+id/zipEditText"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="5"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="Password "/>
+
+        <Button
+            android:id="@+id/thread"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/thread" />
+
+        <Button
+            android:id="@+id/async"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:onClick=""
+            android:text="@string/async" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:onClick="clear"
+            android:text="@string/clear" />
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:onClick="close"
+            android:text="@string/close"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="com.example.teja.inclass04.MainActivity">-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/nameTextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="49dp"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:text="Name"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/deptTextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Dept"-->
+        <!--android:textAlignment="viewEnd"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_alignBottom="@+id/deptEditText"-->
+        <!--android:layout_toStartOf="@+id/nameEditText" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/ageTextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="22dp"-->
+        <!--android:text="Age"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_below="@+id/deptTextView"-->
+        <!--android:layout_alignEnd="@+id/deptTextView" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/zipTextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="35dp"-->
+        <!--android:text="ZIP"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_below="@+id/ageTextView"-->
+        <!--android:layout_alignEnd="@+id/ageTextView"-->
+        <!--android:layout_alignStart="@+id/ageTextView" />-->
+    <!--<EditText-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="19dp"-->
+        <!--android:id="@+id/nameEditText"-->
+        <!--android:layout_alignBaseline="@+id/nameTextView"-->
+        <!--android:layout_alignBottom="@+id/nameTextView"-->
+        <!--android:layout_toEndOf="@+id/nameTextView" />-->
+    <!--<EditText-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/deptEditText"-->
+        <!--android:layout_below="@+id/nameEditText"-->
+        <!--android:layout_alignStart="@+id/nameEditText" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/ageEditText"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/zipTextView"-->
+        <!--android:layout_alignStart="@+id/deptEditText"-->
+        <!--android:inputType="number"-->
+        <!--android:maxLength="2" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/zipEditText"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/zipTextView"-->
+        <!--android:layout_alignStart="@+id/ageEditText"-->
+        <!--android:inputType="number"-->
+        <!--android:maxLength="5" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView5"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Password"-->
+        <!--android:textSize="24sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginTop="31dp"-->
+        <!--android:layout_below="@+id/zipTextView"-->
+        <!--android:layout_toStartOf="@+id/zipEditText" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Generate Using Thread"-->
+        <!--android:layout_above="@+id/button2"-->
+        <!--android:layout_alignStart="@+id/textView5"-->
+        <!--android:layout_alignEnd="@+id/zipEditText" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Generate using AsyncTask"-->
+        <!--android:onClick="asyncTaskCompletion"-->
+        <!--android:layout_above="@+id/textView6"-->
+        <!--android:layout_alignStart="@+id/button"-->
+        <!--android:layout_marginBottom="11dp"-->
+        <!--android:layout_alignEnd="@+id/button" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="18dp"-->
+        <!--android:text="Clear"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_toEndOf="@+id/zipTextView" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button5"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/button3"-->
+        <!--android:layout_toEndOf="@+id/button3"-->
+        <!--android:text="Close" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView6"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="11dp"-->
+        <!--android:text="TextView"-->
+        <!--android:textSize="30sp"-->
+        <!--android:layout_above="@+id/button3"-->
+        <!--android:layout_toEndOf="@+id/textView5" />-->
+
+<!--</RelativeLayout>-->

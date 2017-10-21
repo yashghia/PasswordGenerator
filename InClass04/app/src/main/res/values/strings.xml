@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">InClass4</string>
+    <string name="thread">Generate Using Thread</string>
+    <string name="async">Generate Using AsyncTask</string>
+    <string name="clear">Clear</string>
+    <string name="close">Close</string>
+</resources>
